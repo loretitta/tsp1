@@ -3,17 +3,17 @@ package javaapplication1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class init 
+public class init
 {
     public static void main(String[] args)
     {
      long start = System.currentTimeMillis();
         List<ciudad> lista = new ArrayList<ciudad>();
-        
+
            lista.add(new ciudad(1,3600,2300));
            lista.add(new ciudad(2,3100,3300));
            lista.add(new ciudad(3,4700,5750));
-           lista.add(new ciudad(4,5400,5750));        
+           lista.add(new ciudad(4,5400,5750));
            lista.add(new ciudad(5,5608,7103));
            lista.add(new ciudad(6,4493,7102));
            lista.add(new ciudad(7,3600,6950));
@@ -85,8 +85,8 @@ public class init
            lista.add(new ciudad(73,19800,12200));
            lista.add(new ciudad(74,200,12200));
            lista.add(new ciudad(75,200,1100));
-           lista.add(new ciudad(76,200,800)); 
-           
+           lista.add(new ciudad(76,200,800));
+           //hola marco como estas guachito carnuo 1313
         PermutacionesIterator iter = new PermutacionesIterator(lista);
         int id = 0;
         double m,a=500000;
@@ -99,13 +99,13 @@ public class init
                if(m<a)
                {
                    a=m;
-               }   
+               }
               // System.out.println(sol.getFitness());
                System.out.println("El mejor fitness es: "+a);
         }
-        //System.out.println("El mejor fitness es: "+a); 
+        //System.out.println("El mejor fitness es: "+a);
         long end = System.currentTimeMillis();
         long res = end - start;
-        System.out.println("Segundos: "+res/1000);  
+        System.out.println("Segundos: "+res/1000);
     }
 }
